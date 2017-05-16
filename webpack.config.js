@@ -12,7 +12,8 @@ module.exports ={
   module: {
     loaders: [
       {
-        test: /\.css$/,loader: 'style-loader!css-loader'
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
       },
       {
             test: /\.jsx?$/,
@@ -25,7 +26,7 @@ module.exports ={
     ]
   },
   resolve: {
-    extensions: ['','.coffee','.js']
+    extensions: ['','.coffee','.js','.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({     // Create HTML file that includes references to bundled CSS and JS.
